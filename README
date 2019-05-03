@@ -13,3 +13,5 @@ genplot.gp: draw plot from CSV file
 runtime.png: result of genplot.gp
 
 result_clock_gettime.csv: result of gencsv.sh
+
+segfault-ex.c: example of segmentation fault for gdb
