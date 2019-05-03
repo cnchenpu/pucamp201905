@@ -1,0 +1,15 @@
+pi-exp1.c: compute pi baseline - for debug and perf
+pi-exp2.c: compute pi 3 methods - show the resultes
+pi-exp3.c: compute pi 3 methods - show the clock time
+	- gcc -g -o pi-exp3 pi-exp3.c -lm
+
+gencsv.sh: generate CSV file from pi-exp3
+
+gencsv1.sh: show results of pi-exp3, no CSV file
+
+genplot.gp: draw plot from CSV file
+	- gnuplot genplot.gp
+
+runtime.png: result of genplot.gp
+
+result_clock_gettime.csv: result of gencsv.sh
